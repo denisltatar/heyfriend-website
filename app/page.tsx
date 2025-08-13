@@ -2,6 +2,7 @@ import { Mic, Sparkles, SkipForward, Shield } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import IPhoneMockup from "@/components/IPhoneMockup";
+import NudgeHint from "@/components/NudgeHint";
 
 export default function Page() {
   return (

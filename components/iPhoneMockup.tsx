@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Orb from "./Orb";
 
-export default function iPhoneMockup() {
+export default function IPhoneMockup() {
   const [isListening, setIsListening] = useState(false);
   return (
     <motion.div

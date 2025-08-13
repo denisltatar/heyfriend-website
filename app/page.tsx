@@ -195,8 +195,8 @@ export default function Page() {
         <div className="bg-red-50 border border-red-200 rounded-2xl p-6 mt-10">
             <h3 className="font-semibold text-red-800 mb-2">Important Disclaimer</h3>
             <p className="text-red-700 text-sm">
-              HeyFriend is not medical care or a crisis service. If you're in immediate danger or experiencing a crisis, 
-              call <strong>988</strong> (US) or your local emergency number.
+              {"HeyFriend is not medical care or a crisis service. If you're in immediate danger or experiencing a crisis, 
+              call <strong>988</strong> (US) or your local emergency number."}"
             </p>
           </div>
       </section>

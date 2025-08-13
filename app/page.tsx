@@ -1,103 +1,66 @@
+import Orb from "@/components/Orb";
+import { Mic, Sparkles, SkipForward, Shield } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50 text-slate-800">
+      {/* Hero */}
+      <section className="mx-auto max-w-6xl px-6 pt-20 pb-12 grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <div className="flex items-center gap-3 mb-6">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/logo.png"
+              alt="HeyFriend Logo"
+              width={48}
+              height={48}
+              className="w-12 h-12 rounded-2xl shadow-sm"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <h1 className="text-3xl font-bold text-slate-800">HeyFriend</h1>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-800 mb-4">Talk it out. Learn from it.</h2>
+          <p className="text-lg text-slate-600 mb-6">
+            HeyFriend is a voice-first AI that helps you reflect—then surfaces gentle insights after each session.
+          </p>
+          <div className="flex gap-3 mb-4">
+            <button aria-disabled className="rounded-xl bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 disabled:opacity-70 font-medium transition-colors">
+              Download on the App Store
+            </button>
+            <Link href="#waitlist" className="rounded-xl border border-slate-300 hover:border-slate-400 px-6 py-3 font-medium transition-colors">Join waitlist</Link>
+          </div>
+          <p className="text-sm text-slate-500">
+            Your voice powers the session. We don&apos;t sell data. <Link href="/privacy" className="underline hover:text-slate-700">Privacy Policy</Link>.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex justify-center"><Orb /></div>
+      </section>
+
+      {/* Features */}
+      <section className="mx-auto max-w-6xl px-6 py-14">
+        <h2 className="text-2xl font-semibold text-slate-800 mb-8">What you get</h2>
+        <ul className="grid gap-6 md:grid-cols-2">
+          <Feature icon={<Mic className="text-amber-500" />} title="Multi-turn voice chat" desc="Natural back-and-forth, tuned for empathy." />
+          <Feature icon={<Sparkles className="text-amber-500" />} title="Post-session insights" desc="Summaries that help you notice patterns." />
+          <Feature icon={<SkipForward className="text-amber-500" />} title="Barge-in" desc="Talk over the assistant when you need to." />
+          <Feature icon={<Shield className="text-amber-500" />} title="Privacy-first" desc="No data sales. Clear controls." />
+        </ul>
+        <p className="mt-10 text-xs text-slate-500 text-center">
+          Not a medical device. If you&apos;re in crisis, call 988 (US) or your local emergency number.
+        </p>
+      </section>
+    </main>
+  );
+}
+
+function Feature({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
+  return (
+    <li className="rounded-2xl border border-slate-200 bg-white/50 p-6 hover:shadow-lg transition-shadow">
+      <div className="flex items-center gap-3 text-slate-700 mb-3">
+        <span className="h-6 w-6">{icon}</span>
+        <h3 className="font-semibold text-lg">{title}</h3>
+      </div>
+      <p className="text-slate-600">{desc}</p>
+    </li>
   );
 }

@@ -37,7 +37,7 @@ export default function IPhoneMockup() {
               className="absolute top-74 left-4 right-4 bg-white rounded-2xl p-4 shadow-lg border border-slate-200"
             >
               <p className="text-sm text-slate-700 leading-relaxed">
-                I hear you, that can be a difficult situation. Here's how I can help...
+                {"I hear you, that can be a difficult situation. Here's how I can help..."}
               </p>
             </motion.div>
           )}

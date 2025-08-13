@@ -184,7 +184,7 @@ export default function PrivacyPage() {
             <h3 className="font-semibold text-red-800 mb-2">Important Disclaimer</h3>
             <p className="text-red-700 text-sm">
               HeyFriend is not medical care or a crisis service. If you&apos;re in immediate danger or experiencing a crisis, 
-              call <strong>988</strong> (US) or your local emergency number."
+              call <strong>988</strong> (US) or your local emergency number.
             </p>
           </div>
         </div>

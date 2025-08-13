@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "HeyFriend is a voice-first AI that helps you reflect—then surfaces gentle insights after each session.",
   icons: {
     icon: '/favicon.svg',
-    apple: '/logo.png',
+    apple: '/logo.svg',
   },
   openGraph: {
     title: "HeyFriend — Talk it out. Learn from it.",

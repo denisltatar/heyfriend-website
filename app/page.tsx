@@ -42,7 +42,7 @@ export default function Page() {
         <div>
           <div className="flex items-center gap-3 mb-6">
             <Image
-              src="/logo.png"
+              src="/logo.svg"
               alt="HeyFriend Logo"
               width={48}
               height={48}

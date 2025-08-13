@@ -173,7 +173,7 @@ export default function PrivacyPage() {
           {/* Contact */}
           <section className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
             <h2 className="text-2xl font-bold text-slate-800 mb-4">Questions or Requests?</h2>
-            <p className="text-slate-600 mb-4">{"We're here to help with any privacy concerns or data requests."}</p>
+            <p className="text-slate-600 mb-4">We&apos;re here to help with any privacy concerns or data requests.</p>
             <div className="space-y-2">
               <p className="text-slate-800"><strong>Email:</strong> support@heyfriend.app</p>
             </div>
@@ -183,8 +183,8 @@ export default function PrivacyPage() {
           <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
             <h3 className="font-semibold text-red-800 mb-2">Important Disclaimer</h3>
             <p className="text-red-700 text-sm">
-              {"HeyFriend is not medical care or a crisis service. If you're in immediate danger or experiencing a crisis, 
-              call <strong>988</strong> (US) or your local emergency number."}"
+              HeyFriend is not medical care or a crisis service. If you&apos;re in immediate danger or experiencing a crisis, 
+              call <strong>988</strong> (US) or your local emergency number."
             </p>
           </div>
         </div>

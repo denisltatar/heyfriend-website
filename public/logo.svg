@@ -1,1 +1,20 @@
- 
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hand palm and fingers -->
+  <path d="M20 32C20 28 22 24 26 22C30 20 34 22 36 26C38 30 36 34 32 36C28 38 24 36 22 32C20 28 20 24 22 20C24 16 28 14 32 16C36 18 38 22 36 26" fill="#F6AD55" stroke="#2D3748" stroke-width="2"/>
+  
+  <!-- Thumb -->
+  <path d="M16 28C14 26 12 24 12 20C12 16 14 14 18 16C20 18 20 22 18 24C16 26 16 28 16 28Z" fill="#F6AD55" stroke="#2D3748" stroke-width="2"/>
+  
+  <!-- Fingers -->
+  <path d="M32 16C34 14 36 12 40 12C44 12 46 14 44 18C42 22 38 24 34 22C30 20 28 16 30 12C32 8 36 6 40 8C44 10 46 14 44 18" fill="#F6AD55" stroke="#2D3748" stroke-width="2"/>
+  
+  <path d="M36 12C38 10 40 8 44 8C48 8 50 10 48 14C46 18 42 20 38 18C34 16 32 12 34 8C36 4 40 2 44 4C48 6 50 10 48 14" fill="#F6AD55" stroke="#2D3748" stroke-width="2"/>
+  
+  <path d="M40 8C42 6 44 4 48 4C52 4 54 6 52 10C50 14 46 16 42 14C38 12 36 8 38 4C40 0 44 -2 48 0C52 2 54 6 52 10" fill="#F6AD55" stroke="#2D3748" stroke-width="2"/>
+  
+  <path d="M44 4C46 2 48 0 52 0C56 0 58 2 56 6C54 10 50 12 46 10C42 8 40 4 42 0C44 -4 48 -6 52 -4C56 -2 58 2 56 6" fill="#F6AD55" stroke="#2D3748" stroke-width="2"/>
+  
+  <!-- Motion lines -->
+  <path d="M52 8C54 6 56 4 60 2" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+  <path d="M54 12C56 10 58 8 62 6" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+</svg> 

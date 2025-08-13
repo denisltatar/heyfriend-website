@@ -44,9 +44,38 @@ export default function IPhoneMockup() {
           
           {/* Mic Button */}
           <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
+            {/* Large pulsing ring around mic */}
+            <motion.div
+              className="absolute inset-0 w-20 h-20 rounded-full border-2 border-amber-400/30 -m-3"
+              animate={{ 
+                scale: [1, 1.3, 1],
+                opacity: [0.3, 0.1, 0.3]
+              }}
+              transition={{ 
+                duration: 3, 
+                ease: "easeInOut", 
+                repeat: Infinity 
+              }}
+            />
+            
+            {/* Medium pulsing ring */}
+            <motion.div
+              className="absolute inset-0 w-16 h-16 rounded-full border-2 border-amber-400/40 -m-1"
+              animate={{ 
+                scale: [1, 1.15, 1],
+                opacity: [0.4, 0.2, 0.4]
+              }}
+              transition={{ 
+                duration: 2, 
+                ease: "easeInOut", 
+                repeat: Infinity,
+                delay: 0.5
+              }}
+            />
+            
             <motion.button
-              className="w-14 h-14 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-lg border border-amber-600/30 flex items-center justify-center hover:shadow-xl transition-shadow"
-              whileHover={{ scale: 1.05 }}
+              className="relative w-14 h-14 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-lg border-2 border-amber-600/50 flex items-center justify-center hover:shadow-2xl hover:shadow-amber-500/30 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsListening(!isListening)}
             >

@@ -1,7 +1,7 @@
-import Orb from "@/components/Orb";
 import { Mic, Sparkles, SkipForward, Shield } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import IPhoneMockup from "@/components/iPhoneMockup";
 
 export default function Page() {
   return (
@@ -33,7 +33,9 @@ export default function Page() {
             Your voice powers the session. We don&apos;t sell data. <Link href="/privacy" className="underline hover:text-slate-700">Privacy Policy</Link>.
           </p>
         </div>
-        <div className="flex justify-center"><Orb /></div>
+        <div className="flex justify-center">
+          <IPhoneMockup />
+        </div>
       </section>
 
       {/* Features */}

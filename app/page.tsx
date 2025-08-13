@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Mic, Sparkles, SkipForward, Shield } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import IPhoneMockup from "@/components/iPhoneMockup";
 
 export default function Page() {

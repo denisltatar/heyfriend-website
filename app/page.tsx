@@ -1,5 +1,5 @@
 "use client";
-import { Mic, Sparkles, TrendingUp, Shield, Brain, Heart, ChevronDown } from "lucide-react";
+import { Mic, TrendingUp, Brain, Heart, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import IPhoneMockup from "@/components/IPhoneMockup";
@@ -191,6 +191,14 @@ export default function Page() {
             </div>
           ))}
         </div>
+        {/* Disclaimer */}
+        <div className="bg-red-50 border border-red-200 rounded-2xl p-6 mt-10">
+            <h3 className="font-semibold text-red-800 mb-2">Important Disclaimer</h3>
+            <p className="text-red-700 text-sm">
+              HeyFriend is not medical care or a crisis service. If you&apos;re in immediate danger or experiencing a crisis, 
+              call <strong>988</strong> (US) or your local emergency number.
+            </p>
+          </div>
       </section>
     </main>
   );

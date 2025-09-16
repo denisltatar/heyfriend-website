@@ -52,7 +52,7 @@ export default function Page() {
           </div>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-800 mb-4">Talk it out. Learn from it.</h2>
           <p className="text-lg text-slate-600 mb-6">
-            HeyFriend is a voice-first AI that helps you reflect—then surfaces gentle insights after each session.
+            HeyFriend is a voice-first AI that helps you reflect, then surfaces gentle insights after each session.
           </p>
           <div className="flex gap-3 mb-4">
             <a 
@@ -69,7 +69,7 @@ export default function Page() {
                 <div className="text-sm font-semibold">App Store</div>
               </div>
             </a>
-            <Link href="#waitlist" className="rounded-xl border border-slate-300 hover:border-slate-400 px-6 py-3 font-medium transition-colors">Join waitlist</Link>
+            {/* <Link href="#waitlist" className="rounded-xl border border-slate-300 hover:border-slate-400 px-6 py-3 font-medium transition-colors">Join waitlist</Link> */}
           </div>
           <p className="text-sm text-slate-500">
             Your voice powers the session. We don&apos;t sell data. <Link href="/privacy" className="underline hover:text-slate-700">Privacy Policy</Link>.

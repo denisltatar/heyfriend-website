@@ -12,15 +12,15 @@ export default function PrivacyPage() {
         <div className="mx-auto max-w-4xl px-6 py-6">
           <Link href="/" className="inline-flex items-center gap-3 text-slate-600 hover:text-slate-800 transition-colors">
             <ArrowLeft className="h-4 w-4" />
-            <Image
+          <Image
               src="/logo.svg"
-              alt="HeyFriend Logo"
+            alt="HeyFriend Logo"
               width={24}
               height={24}
               className="w-6 h-6 rounded-lg shadow-sm"
             />
             <span className="font-semibold">Back to HeyFriend</span>
-          </Link>
+        </Link>
         </div>
       </div>
 
@@ -131,7 +131,7 @@ export default function PrivacyPage() {
                   <li>• <strong>Transcripts & summaries:</strong> Kept in your account unless you delete them</li>
                   <li>• <strong>Raw audio:</strong> Not retained after processing</li>
                   <li>• <strong>Diagnostics:</strong> Retained for limited time to improve the app</li>
-                </ul>
+      </ul>
               </div>
             </div>
           </section>

@@ -112,7 +112,7 @@ export default function SupportPage() {
 
             <div className="bg-white/50 rounded-2xl border border-slate-200 overflow-hidden">
               <div className="p-6">
-                <h3 className="font-semibold text-lg text-slate-800 mb-3">What if I'm in crisis?</h3>
+                <h3 className="font-semibold text-lg text-slate-800 mb-3">What if I&apos;m in crisis?</h3>
                 <p className="text-slate-600 leading-relaxed">
                   HeyFriend is not a crisis intervention service. If you&apos;re experiencing a mental health crisis 
                   or having thoughts of self-harm, please contact:

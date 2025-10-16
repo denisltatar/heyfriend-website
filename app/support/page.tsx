@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, MessageCircle, Mail, Phone, HelpCircle, Bug, Star, Zap, Shield, Clock, Users, BookOpen } from "lucide-react";
+import { ArrowLeft, MessageCircle, Mail, HelpCircle, Bug, Star, Zap, Shield, Clock, BookOpen } from "lucide-react";
 
 export const metadata = { 
   title: "Support • HeyFriend",
@@ -36,7 +36,7 @@ export default function SupportPage() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">How can we help?</h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            We're here to support you on your mental health journey. Find answers, get help, or reach out directly.
+            We&apos;re here to support you on your mental health journey. Find answers, get help, or reach out directly.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function SupportPage() {
                 <h3 className="font-semibold text-lg text-slate-800 mb-3">How does HeyFriend work?</h3>
                 <p className="text-slate-600 leading-relaxed">
                   HeyFriend uses AI to provide a safe space for voice-based reflection. Simply tap the microphone, 
-                  speak about what's on your mind, and receive empathetic responses and insights to help you understand 
+                  speak about what&apos;s on your mind, and receive empathetic responses and insights to help you understand 
                   your emotional patterns better.
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function SupportPage() {
                 <h3 className="font-semibold text-lg text-slate-800 mb-3">Can HeyFriend replace therapy?</h3>
                 <p className="text-slate-600 leading-relaxed">
                   No, HeyFriend is designed to complement your mental health journey, not replace professional therapy. 
-                  It's a tool for daily reflection and emotional awareness. For serious mental health concerns, 
+                  It&apos;s a tool for daily reflection and emotional awareness. For serious mental health concerns, 
                   please consult a licensed therapist or healthcare provider.
                 </p>
               </div>
@@ -114,7 +114,7 @@ export default function SupportPage() {
               <div className="p-6">
                 <h3 className="font-semibold text-lg text-slate-800 mb-3">What if I'm in crisis?</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  HeyFriend is not a crisis intervention service. If you're experiencing a mental health crisis 
+                  HeyFriend is not a crisis intervention service. If you&apos;re experiencing a mental health crisis 
                   or having thoughts of self-harm, please contact:
                   <br />• <strong>988</strong> (Suicide & Crisis Lifeline)
                   <br />• <strong>911</strong> (Emergency Services)
@@ -127,7 +127,7 @@ export default function SupportPage() {
               <div className="p-6">
                 <h3 className="font-semibold text-lg text-slate-800 mb-3">How accurate is the AI analysis?</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  Our AI is trained to recognize emotional patterns and provide insights, but it's not perfect. 
+                  Our AI is trained to recognize emotional patterns and provide insights, but it&apos;s not perfect. 
                   The insights are meant to help you reflect and should be taken as suggestions, not definitive 
                   diagnoses. Always trust your own judgment about your mental health.
                 </p>
@@ -138,7 +138,7 @@ export default function SupportPage() {
               <div className="p-6">
                 <h3 className="font-semibold text-lg text-slate-800 mb-3">Can I export my data?</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  Yes, you can request a copy of your data at any time. Contact our support team and we'll 
+                  Yes, you can request a copy of your data at any time.                   Contact our support team and we&apos;ll 
                   provide you with an export of your conversations and insights in a readable format.
                 </p>
               </div>
@@ -151,7 +151,7 @@ export default function SupportPage() {
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-3xl p-8 border border-amber-200">
             <h2 className="text-3xl font-bold text-slate-800 mb-6 text-center">Contact Our Support Team</h2>
             <p className="text-slate-600 text-center mb-8 max-w-2xl mx-auto">
-              Can't find what you're looking for? Our support team is here to help you with any questions or concerns.
+              Can&apos;t find what you&apos;re looking for? Our support team is here to help you with any questions or concerns.
             </p>
             
             <div className="grid gap-6 md:grid-cols-2">
@@ -270,7 +270,7 @@ export default function SupportPage() {
             Important: Crisis Support
           </h3>
           <p className="text-red-700 text-sm">
-            HeyFriend is not a crisis intervention service. If you're experiencing a mental health crisis, 
+            HeyFriend is not a crisis intervention service. If you&apos;re experiencing a mental health crisis, 
             please call <strong>988</strong> (Suicide & Crisis Lifeline) or <strong>911</strong> immediately.
           </p>
         </div>

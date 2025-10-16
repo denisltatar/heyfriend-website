@@ -72,7 +72,10 @@ export default function Page() {
             {/* <Link href="#waitlist" className="rounded-xl border border-slate-300 hover:border-slate-400 px-6 py-3 font-medium transition-colors">Join waitlist</Link> */}
           </div>
           <p className="text-sm text-slate-500">
-            Your voice powers the session. We don&apos;t sell data. <Link href="/privacy" className="underline hover:text-slate-700">Privacy Policy</Link>.
+            Your voice powers the session. We don&apos;t sell data. 
+          </p>
+          <p className="text-sm text-slate-500">
+            <Link href="/privacy" className="underline hover:text-slate-700">Privacy Policy</Link>. <Link href="/support" className="underline hover:text-slate-700">Support</Link>.
           </p>
         </div>
         <div className="flex justify-center">

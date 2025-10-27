@@ -214,6 +214,27 @@ export default function Page() {
             </p>
           </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-200 bg-white/30 backdrop-blur-sm">
+        <div className="mx-auto max-w-4xl px-6 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/logo.svg"
+                alt="HeyFriend Logo"
+                width={32}
+                height={32}
+                className="w-8 h-8 rounded-lg shadow-sm"
+              />
+              <span className="text-slate-600 font-medium">HeyFriend</span>
+            </div>
+            <div className="text-sm text-slate-500">
+              Created by <span className="font-medium text-slate-600">Thoughtful Code, LLC</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

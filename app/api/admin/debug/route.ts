@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 // Simple debug endpoint to check if ADMIN_PASSWORD is set (without revealing it)
 // Only available in development mode for security

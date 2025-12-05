@@ -62,7 +62,7 @@ export default function EmailForm() {
           setMessage(data.error || "Something went wrong. Please try again.");
         }
       }
-    } catch (error) {
+    } catch {
       setStatus("error");
       setMessage("Something went wrong. Please try again.");
     }
@@ -84,10 +84,10 @@ export default function EmailForm() {
           </div>
           <div className="flex-1">
             <p className="text-sm font-medium text-green-800">
-              You're on the list!
+              You&apos;re on the list!
             </p>
             <p className="text-xs text-green-600 mt-0.5">
-              We'll notify {subscribedEmail ? `${subscribedEmail.split('@')[0]}@...` : 'you'} when we launch.
+              We&apos;ll notify {subscribedEmail ? `${subscribedEmail.split('@')[0]}@...` : 'you'} when we launch.
             </p>
           </div>
         </div>

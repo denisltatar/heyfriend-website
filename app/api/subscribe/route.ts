@@ -54,11 +54,11 @@ export async function POST(request: NextRequest) {
       },
       { status: 201 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Subscribe API error:', error);
     
     // Handle duplicate email error
-    if (error.message === 'Email already exists') {
+    if (error instanceof Error && error.message === 'Email already exists') {
       return NextResponse.json(
         { error: 'Email already subscribed', alreadyExists: true },
         { status: 409 }

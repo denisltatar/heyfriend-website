@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Download, Mail, Lock, Loader2, CheckCircle2, XCircle, Trash2 } from "lucide-react";
+import { Download, Mail, Lock, Loader2, CheckCircle2, Trash2 } from "lucide-react";
 import Image from "next/image";
 
 interface EmailSubscriber {
@@ -45,7 +45,7 @@ export default function AdminEmailsPage() {
         const errorData = await response.json().catch(() => ({}));
         setError(errorData.error || "Incorrect password. Please check your password and try again.");
       }
-    } catch (err) {
+    } catch {
       setError("Failed to authenticate. Please try again.");
     } finally {
       setLoading(false);
@@ -70,7 +70,7 @@ export default function AdminEmailsPage() {
         const data = await response.json();
         setSubscribers(data.subscribers);
       }
-    } catch (err) {
+    } catch {
       setError("Failed to fetch emails");
     } finally {
       setLoading(false);
@@ -85,6 +85,7 @@ export default function AdminEmailsPage() {
       fetchEmails();
       setIsAuthenticated(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const exportToCSV = () => {
@@ -153,7 +154,7 @@ export default function AdminEmailsPage() {
         const errorData = await response.json().catch(() => ({}));
         setError(errorData.error || "Failed to delete email");
       }
-    } catch (err) {
+    } catch {
       setError("Failed to delete email. Please try again.");
     } finally {
       setLoading(false);

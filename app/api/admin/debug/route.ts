@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 // Simple debug endpoint to check if ADMIN_PASSWORD is set (without revealing it)
 // Only available in development mode for security
-export async function GET(_request: NextRequest) {
+export async function GET() {
   // Disable in production for security
   if (process.env.NODE_ENV === 'production') {
     return NextResponse.json(

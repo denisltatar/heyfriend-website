@@ -3,6 +3,7 @@ import { Mic, TrendingUp, Brain, Heart, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import IPhoneMockup from "@/components/IPhoneMockup";
+import EmailForm from "@/components/EmailForm";
 import { useState } from "react";
 
 export default function Page() {
@@ -54,7 +55,11 @@ export default function Page() {
           <p className="text-lg text-slate-600 mb-6">
             HeyFriend is a voice-first AI that helps you reflect, then surfaces gentle insights after each session.
           </p>
-          <div className="flex gap-3 mb-4">
+          <div className="mb-6">
+            <p className="text-sm font-medium text-slate-700 mb-3">Get notified when we launch:</p>
+            <EmailForm />
+          </div>
+          {/* <div className="flex gap-3 mb-4">
             <a 
               href="https://apps.apple.com/app/your-app-id" 
               target="_blank" 
@@ -69,8 +74,7 @@ export default function Page() {
                 <div className="text-sm font-semibold">App Store</div>
               </div>
             </a>
-            {/* <Link href="#waitlist" className="rounded-xl border border-slate-300 hover:border-slate-400 px-6 py-3 font-medium transition-colors">Join waitlist</Link> */}
-          </div>
+          </div> */}
           <p className="text-sm text-slate-500">
             Your voice powers the session. We don&apos;t sell data. 
           </p>

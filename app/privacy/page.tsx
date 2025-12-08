@@ -13,7 +13,7 @@ export default function PrivacyPage() {
           <Link href="/" className="inline-flex items-center gap-3 text-slate-600 hover:text-slate-800 transition-colors">
             <ArrowLeft className="h-4 w-4" />
           <Image
-              src="/logo.svg"
+              src="/newest-logo.png"
             alt="HeyFriend Logo"
               width={24}
               height={24}
@@ -196,7 +196,7 @@ export default function PrivacyPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/logo.svg"
+                src="/newest-logo.png"
                 alt="HeyFriend Logo"
                 width={32}
                 height={32}

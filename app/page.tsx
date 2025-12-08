@@ -43,7 +43,7 @@ export default function Page() {
         <div>
           <div className="flex items-center gap-3 mb-6">
             <Image
-              src="/logo.svg"
+              src="/newest-logo.png"
               alt="HeyFriend Logo"
               width={48}
               height={48}
@@ -225,7 +225,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/logo.svg"
+                src="/newest-logo.png"
                 alt="HeyFriend Logo"
                 width={32}
                 height={32}

@@ -167,7 +167,7 @@ export default function AdminEmailsPage() {
         <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 border border-slate-200">
           <div className="flex items-center gap-3 mb-6 justify-center">
             <Image
-              src="/logo.svg"
+              src="/newest-logo.png"
               alt="HeyFriend Logo"
               width={40}
               height={40}
@@ -226,7 +226,7 @@ export default function AdminEmailsPage() {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <Image
-                src="/logo.svg"
+                src="/newest-logo.png"
                 alt="HeyFriend Logo"
                 width={40}
                 height={40}

@@ -100,6 +100,13 @@ export default function PrivacyPage() {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
+                  <strong className="text-slate-800">Analyze conversation patterns</strong>
+                  <p className="text-slate-600">Analyze conversation patterns to generate personalized insights</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
                   <strong className="text-slate-800">Improve reliability</strong>
                   <p className="text-slate-600">Troubleshoot crashes and optimize performance</p>
                 </div>

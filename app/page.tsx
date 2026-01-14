@@ -1,5 +1,5 @@
 "use client";
-import { Mic, TrendingUp, Brain, Heart, ChevronDown } from "lucide-react";
+import { Mic, TrendingUp, Brain, Heart, ChevronDown, MessageSquare, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import IPhoneMockup from "@/components/IPhoneMockup";
@@ -76,10 +76,7 @@ export default function Page() {
             </a>
           </div> */}
           <p className="text-sm text-slate-500">
-            Your voice powers the session. We don&apos;t sell data. 
-          </p>
-          <p className="text-sm text-slate-500">
-            <Link href="/privacy" className="underline hover:text-slate-700">Privacy Policy</Link>. <Link href="/support" className="underline hover:text-slate-700">Support</Link>.
+            Your voice powers the session. We don&apos;t sell data.
           </p>
         </div>
         <div className="flex justify-center">
@@ -99,6 +96,65 @@ export default function Page() {
         <p className="mt-10 text-xs text-slate-500 text-center">
           Not a medical device. If you&apos;re in crisis, call 988 (US) or your local emergency number.
         </p>
+      </section>
+
+      {/* Feedback CTA Section */}
+      <section className="mx-auto max-w-5xl px-6 py-12">
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 px-8 py-12 md:px-16 md:py-16">
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-amber-100 rounded-lg">
+                  <MessageSquare className="h-6 w-6 text-amber-600" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-800">
+                  Share Your Feedback
+                </h2>
+              </div>
+              <div className="mb-6">
+                <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                  <span>100% Anonymous & Secure</span>
+                </div>
+              </div>
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                Help shape HeyFriend by sharing your ideas, suggestions, and feedback. Your input directly influences our roadmap and product decisions.
+              </p>
+              <Link
+                href="/feedback"
+                className="inline-flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-lg font-medium hover:bg-slate-700 transition-colors"
+              >
+                <span>Visit Feedback Forum</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+          
+          <div className="px-8 py-8 md:px-16 md:py-10 border-t border-slate-100">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="font-semibold text-slate-800 mb-2">Share Ideas</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Suggest new features, improvements, or share what you&apos;d like to see in HeyFriend.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800 mb-2">Vote & Prioritize</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Upvote the feedback that matters most to you. Help us understand what to build next.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800 mb-2">Anonymous & Secure</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  All feedback is completely anonymous. Share openly and help us build better.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Graduation Section */}
@@ -218,27 +274,6 @@ export default function Page() {
             </p>
           </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white/30 backdrop-blur-sm">
-        <div className="mx-auto max-w-4xl px-6 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/newest-logo.png"
-                alt="HeyFriend Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8 rounded-lg shadow-sm"
-              />
-              <span className="text-slate-600 font-medium">HeyFriend</span>
-            </div>
-            <div className="text-sm text-slate-500">
-              Created by <span className="font-medium text-slate-600">Thoughtful Code, LLC</span>
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }

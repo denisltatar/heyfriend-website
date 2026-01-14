@@ -120,7 +120,7 @@ export interface Feedback {
   upvotes: number;
   downvotes: number;
   score: number;
-  created_at: Date;
+  created_at: string | Date;
   user_vote?: 'up' | 'down' | null;
 }
 

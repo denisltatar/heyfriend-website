@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Your privacy is fundamental to HeyFriend. This policy explains how we protect your data and your rights.
           </p>
-          <p className="text-sm text-slate-500 mt-4">Last updated: August 12, 2025</p>
+          <p className="text-sm text-slate-500 mt-4">Last updated: January 26, 2026</p>
         </div>
 
         {/* Policy Content */}
@@ -144,7 +144,7 @@ export default function PrivacyPage() {
           </section>
 
           {/* Your choices */}
-          <section className="bg-white/50 rounded-2xl p-8 border border-slate-200">
+          {/* <section className="bg-white/50 rounded-2xl p-8 border border-slate-200">
             <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
               <Download className="h-6 w-6 text-amber-500" />
               Your Choices
@@ -163,7 +163,7 @@ export default function PrivacyPage() {
                 <p className="text-sm text-slate-600">Toggle analytics off in Settings where available</p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Additional info */}
           <div className="grid gap-6 md:grid-cols-2">
@@ -182,7 +182,7 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-bold text-slate-800 mb-4">Questions or Requests?</h2>
             <p className="text-slate-600 mb-4">We&apos;re here to help with any privacy concerns or data requests.</p>
             <div className="space-y-2">
-              <p className="text-slate-800"><strong>Email:</strong> support@heyfriend.app</p>
+              <p className="text-slate-800"><strong>Email:</strong> developer@thoughtfulcode.io</p>
             </div>
           </section>
 
